@@ -1,0 +1,82 @@
+/* app/components/loginPage/LoginPage.module.css */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #145a44, #1b402c);
+}
+
+.loginCard {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.logo h2 {
+  color: var(--primary);
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.inputGroup label {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.loginButton {
+  background: linear-gradient(135deg, var(--primary), #e6b800);
+  color: #1b402c;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.loginButton:hover {
+  background: linear-gradient(135deg, #ffd633, #806910);
+  transform: scale(1.05);
+}
+
+.signUpLink {
+  margin-top: 20px;
+  color: #555;
+}
+
+.signUpLink .link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signUpLink .link:hover {
+  text-decoration: underline;
+}

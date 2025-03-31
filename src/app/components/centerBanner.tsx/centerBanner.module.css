@@ -1,0 +1,22 @@
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Para centralizar verticalmente na tela toda */
+}
+
+.swiper {
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; /* Mantém a imagem proporcional e cobre toda a área */
+  border-radius: 10px;
+}

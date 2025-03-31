@@ -1,0 +1,97 @@
+.carouselContainer {
+  width: 100%;
+  padding: 40px 0; /* Aumentei o padding para criar mais espaço acima e abaixo do carrossel */
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px; /* Adiciona um pequeno espaço abaixo do carrossel */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Adiciona espaçamento entre os cards */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, z-index 0s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  margin: 10px; /* Adiciona mais espaço entre os cards */
+}
+
+.card:hover {
+  transform: scale(1.03);
+  z-index: 1; /* Mantém o card acima dos outros ao passar o mouse */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.swiper-pagination-bullet {
+  background-color: #333;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    flex: 1 1 100%;
+  }
+
+  .card {
+    margin: 15px; /* Aumenta o espaçamento dos cards em telas menores */
+    height: auto;
+  }
+
+  .image {
+    height: 250px;
+  }
+}
