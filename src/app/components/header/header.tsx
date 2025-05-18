@@ -3,10 +3,9 @@ import styles from "@/app/components/header/header.module.css";
 
 
 
-
 export default function Header() {
   return (
-    <>
+    
     <header className={styles.header}>
       {/* Logo */}
       <h1 className={styles.logo}>ATLETA DIGITAL</h1>
@@ -32,6 +31,5 @@ export default function Header() {
         </Link>
       </div>
     </header>
-  </>
   );
-} 
+}
