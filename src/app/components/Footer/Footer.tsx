@@ -17,7 +17,7 @@ export default function Footer() {
         <div className={styles.section}>
           <h3>Links Rápidos</h3>
           <ul>
-            <li><a href="/sobre">Sobre Nós</a></li>
+            <li><a href="/sobreNos">Sobre Nós</a></li>
             <li><a href="/contato">Contato</a></li>
             <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
             <li><a href="/faq">FAQ</a></li>

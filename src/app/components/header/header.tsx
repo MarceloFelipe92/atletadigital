@@ -13,6 +13,7 @@ export default function Header() {
       {/* Navegação */}
       <nav>
         <ul className={styles.navList}>
+          <li><Link href="/sobreNos" className={styles.link}>Sobre Nós</Link></li>
           <li><Link href="/academia" className={styles.link}>Academia</Link></li>
           <li><Link href="/futebol" className={styles.link}>Futebol</Link></li>
           <li><Link href="/natacao" className={styles.link}>Natação</Link></li>
