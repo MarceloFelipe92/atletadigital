@@ -58,7 +58,7 @@ export default function PoliticaPrivacidade() {
                     <li><b>Portabilidade de Dados:</b> Você tem o direito de solicitar a portabilidade de suas informações pessoais para outro controlador de dados em um formato estruturado, comumente usado e legível por máquina.</li>
                     <li><b>Retirar o Consentimento:</b> Se você tiver dado seu consentimento para o processamento de suas informações pessoais, você tem o direito de retirar seu consentimento a qualquer momento.</li>
                 </ul>
-                <p>Para exercer qualquer um desses direitos, entre em contato conosco através das informações fornecidas na seção "Contato" abaixo. Podemos solicitar que você verifique sua identidade antes de responder à sua solicitação.</p>
+                <p>Para exercer qualquer um desses direitos, entre em contato conosco através das informações fornecidas na seção &quot;Contato&quot; abaixo. Podemos solicitar que você verifique sua identidade antes de responder à sua solicitação.</p>
 
                 <h2>5. Segurança de Suas Informações</h2>
                 <p>Implementamos medidas de segurança técnicas e organizacionais razoáveis para proteger suas informações pessoais contra acesso não autorizado, uso indevido, alteração ou destruição. Essas medidas incluem criptografia de dados sensíveis, firewalls, controles de acesso e revisões regulares de nossas práticas de segurança. No entanto, observe que nenhuma transmissão de dados pela Internet ou sistema de armazenamento eletrônico é completamente seguro. Portanto, não podemos garantir a segurança absoluta de suas informações.</p>
