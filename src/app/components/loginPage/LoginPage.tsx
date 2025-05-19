@@ -1,63 +1,40 @@
-// app/components/loginPage/LoginPage.jsx
 "use client";
 
-import React, { useState } from "react";
 import Link from "next/link";
-import styles from "./LoginPage.module.css";
+import styles from "./loginPage.module.css";
+import Header from "../header/header";
+import Footer from "../Footer/Footer";
 
-const LoginPage = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
 
-  const handleSubmit = (event: { preventDefault: () => void; }) => {
-    event.preventDefault();
-    console.log("Enviando dados de login:", { email, password });
-    setEmail("");
-    setPassword("");
-  };
-
+export default function LoginPage() {
   return (
-    <div className={styles.loginContainer}>
-      <div className={styles.loginCard}>
-        <div className={styles.logo}>
-          <h2>ATLETA DIGITAL</h2>
-        </div>
-        <form onSubmit={handleSubmit} className={styles.loginForm}>
-          <div className={styles.inputGroup}>
+    <>
+      <Header />
+      <main className={styles.loginContainer}>
+        <h1>Acesse sua Conta Atleta Digital</h1>
+        <p>Faça login para continuar suas compras e aproveitar todas as funcionalidades.</p>
+
+        <form className={styles.loginForm}>
+          <div className={styles.formGroup}>
             <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className={styles.inputField}
-              required
-            />
+            <input type="email" id="email" required />
           </div>
-          <div className={styles.inputGroup}>
-            <label htmlFor="password">Senha:</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className={styles.inputField}
-              required
-            />
+
+          <div className={styles.formGroup}>
+            <label htmlFor="senha">Senha:</label>
+            <input type="password" id="senha" required />
           </div>
+
           <button type="submit" className={styles.loginButton}>
             Entrar
           </button>
-        </form>
-        <div className={styles.signUpLink}>
-          Não tem uma conta?{" "}
-          <Link href="/cadastrar" className={styles.link}>
-            Cadastrar
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
 
-export default LoginPage;
+          <p className={styles.naoTemConta}>
+            Não tem uma conta? <Link href="/cadastro">Cadastre-se aqui</Link>.
+          </p>
+        </form>
+      </main>
+      <Footer />
+    </>
+  );
+}

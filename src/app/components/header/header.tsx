@@ -26,7 +26,9 @@ export default function Header() {
 
       {/* Botões de autenticação */}
       <div className={styles.authButtons}>
-        <button className={styles.authButton}>Cadastrar</button>
+        <Link href="/cadastroCliente" className={styles.link}>
+          <button className={styles.authButton}>Cadastrar</button>
+        </Link>
         <Link href="/login" className={styles.link}>
           <button className={styles.authButton}>Entrar</button>
         </Link>

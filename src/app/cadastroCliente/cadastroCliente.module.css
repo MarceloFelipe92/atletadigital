@@ -1,27 +1,25 @@
-.loginContainer {
-  max-width: 400px;
-  margin: 80px auto;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   color: var(--foreground);
+.cadastroContainer {
+ padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: var(--foreground);
     background: linear-gradient(135deg, #1b402c, #145a44);
     line-height: 1.6;
 }
 
-.loginContainer h1 {
-  color: var(--primary);
-  text-align: center;
-  margin-bottom: 20px;
+.cadastroContainer h1 {
+  font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary);
 }
 
-.loginContainer p {
-  text-align: center;
-  margin-bottom: 25px;
-  font-size: 1rem;
+.cadastroContainer p {
+  font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--foreground);   
 }
 
-.loginForm {
+.cadastroForm {
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +44,7 @@
   box-sizing: border-box;
 }
 
-.loginButton {
+.cadastrarButton {
   background: linear-gradient(135deg, var(--primary), #e6b800);
   color: #1b402c;
   border: none;
@@ -57,23 +55,23 @@
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.loginButton:hover {
+.cadastrarButton:hover {
   background: linear-gradient(135deg, #ffd633, #e6b800);
   transform: scale(1.05);
 }
 
-.naoTemConta {
+.jaTemConta {
   text-align: center;
   margin-top: 20px;
   font-size: 0.9rem;
 }
 
-.naoTemConta a {
+.jaTemConta a {
   color: var(--primary);
   text-decoration: none;
   font-weight: bold;
 }
 
-.naoTemConta a:hover {
+.jaTemConta a:hover {
   text-decoration: underline;
 }
