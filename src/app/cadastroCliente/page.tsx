@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import styles from "./cadastrocliente.module.css";
+import styles from "./cadastroCliente.module.css";
 import Header from "../components/header/header";
 import Footer from "../components/Footer/Footer";
 

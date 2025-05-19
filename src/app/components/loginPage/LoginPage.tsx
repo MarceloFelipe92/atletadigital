@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import styles from "./loginPage.module.css";
+import styles from "./LoginPage.module.css";
 import Header from "../header/header";
 import Footer from "../Footer/Footer";
 
