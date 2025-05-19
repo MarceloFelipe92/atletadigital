@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import styles from "@/app/components/footballBanner/footballBanner.module.css";
 
 export default function FootballBanner() {
@@ -12,7 +13,14 @@ export default function FootballBanner() {
           aprimore suas habilidades com os melhores treinadores e uma estrutura de ponta.
         </p>
       </div>
-      <img src="/images/futebol.jpg" alt="Futebol" className={styles.image} />
+      <Image
+        src="/images/futebol.jpg"
+        alt="Futebol"
+        className={styles.image}
+        width={600}
+        height={400}
+        priority
+      />
     </section>
   );
 }

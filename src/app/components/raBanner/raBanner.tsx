@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import styles from "@/app/components/raBanner/raBanner.module.css";
 
 export default function ARBanner() {
@@ -12,7 +13,13 @@ export default function ARBanner() {
           Experimente inovação, interatividade e possibilidades infinitas!
         </p>
       </div>
-      <img src="/images/realidade-aumentada.jpg" alt="Realidade Aumentada" className={styles.image} />
+      <Image
+        src="/images/realidade-aumentada.jpg"
+        alt="Realidade Aumentada"
+        className={styles.image}
+        width={600}
+        height={400}
+      />
     </section>
   );
 }

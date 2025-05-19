@@ -14,7 +14,7 @@ export default function RealidadeAumentada() {
           {produtosRA.map((produto) => (
             <div key={produto.id} className={styles.card}>
               <Image
-                src={produto.imagem}
+                src={`/images/banners/slide${produto.id}.jpg`}
                 alt={produto.nome}
                 width={300}
                 height={200}

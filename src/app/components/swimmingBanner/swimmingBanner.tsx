@@ -1,11 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import styles from "@/app/components/swimmingBanner/swimmingBanner.module.css";
 
 export default function SwimmingBanner() {
   return (
     <section className={styles.banner}>
-      <img src="/images/natacao.jpg" alt="Natação" className={styles.image} />
+      <Image
+        src="/images/natacao.jpg"
+        alt="Natação"
+        className={styles.image}
+        width={800}
+        height={400}
+        priority
+      />
       <div className={styles.textContainer}>
         <h2 className={styles.h2}>Mergulhe na Experiência</h2>
         <p className={styles.p}>

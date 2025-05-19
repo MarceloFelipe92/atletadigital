@@ -9,7 +9,7 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     console.log("Enviando dados de login:", { email, password });
     setEmail("");

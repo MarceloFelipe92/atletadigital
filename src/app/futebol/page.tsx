@@ -15,17 +15,17 @@ export default function Futebol() {
           {produtosFutebol.map((produto) => (
             <div key={produto.id} className={styles.card}>
               <Image
-                src={produto.imagem}
-                alt={produto.nome}
-                width={300}
-                height={200}
-                className={styles.imagemProduto}
+              src={`/images/banners/slide${produto.id}.jpg`}
+              alt={produto.nome}
+              width={300}
+              height={200}
+              className={styles.imagemProduto}
               />
               <div className={styles.cardBody}>
-                <h2 className={styles.nomeProduto}>{produto.nome}</h2>
-                <p className={styles.descricaoProduto}>{produto.descricao}</p>
-                <p className={styles.precoProduto}>{produto.preco}</p>
-                <button className={styles.botaoAdicionar}>Adicionar ao Carrinho</button>
+              <h2 className={styles.nomeProduto}>{produto.nome}</h2>
+              <p className={styles.descricaoProduto}>{produto.descricao}</p>
+              <p className={styles.precoProduto}>{produto.preco}</p>
+              <button className={styles.botaoAdicionar}>Adicionar ao Carrinho</button>
               </div>
             </div>
           ))}
